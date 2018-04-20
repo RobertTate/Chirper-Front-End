@@ -24,8 +24,8 @@ class Form extends Component {
     handleClick(event) {
         event.preventDefault();
         let addValue = this.state.array;
-        addValue.push(this.state.text);
-        this.setState({ array: addValue.reverse() });
+        addValue.unshift(this.state.text);
+        this.setState({ array: addValue });
     }
 
 
